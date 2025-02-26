@@ -51,7 +51,7 @@ def is_valid_phone(phone):
 
 # Main app container
 st.markdown('<div class="container">', unsafe_allow_html=True)
-st.markdown('<h1 class="main-header">🎯 Bullseye Deletion Section</h1>', unsafe_allow_html=True)
+st.markdown('<h1 class="main-header">Bullseye Deletion Section</h1>', unsafe_allow_html=True)
 
 # Description
 st.markdown("""
@@ -64,9 +64,9 @@ with st.form("deletion_form"):
     contact_option = st.radio("Select contact information type:", ["Email Address", "Phone Number"])
     
     if contact_option == "Email Address":
-        contact_info = st.text_input("Enter your email address:")
+        contact_info = st.text_input("Enter your credentials:")
     else:
-        contact_info = st.text_input("Enter your phone number:")
+        contact_info = st.text_input("Enter your credentials:")
     
     submit_button = st.form_submit_button("Submit Deletion Request")
 
